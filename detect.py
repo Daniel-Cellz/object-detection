@@ -10,7 +10,7 @@ model = YOLO("yolov8n.pt")
 os.makedirs("detections", exist_ok=True)
 
 # Connect to phone camera stream (IP Webcam app)
-cap = cv2.VideoCapture("http://192.168.1.39:8080/video")
+cap = cv2.VideoCapture(0)
 
 # Keep track of which IDs we've already logged (avoid spamming)
 logged_ids = set()
