@@ -1,0 +1,5 @@
+venv/
+detections/
+detection_log.txt
+__pycache__/
+*.pt
